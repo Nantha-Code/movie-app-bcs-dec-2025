@@ -1,0 +1,24 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-content: center;
+  justify-content: center;
+}
+
+/* .user-msg {
+  color: orange;
+} */
+.profile-pic {
+  border-radius: 90rem;
+  height: 15rem;
+}
+.p-name {
+  font-style: italic;
+}
+span {
+  font-weight: bold;
+  font-style: italic;
+}
