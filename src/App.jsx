@@ -77,19 +77,7 @@ function User({ name, url }) {
 // 1. Start with Capital (PascalCase)
 // 2. Return JSX
 
-function Msg1() {
-  let name = "Suriya";
-  let followers = 100;
 
-  return (
-    <div>
-      <h1 className="user-msg">Hello, {name} 🎊</h1>
-      <h2>
-        {name} has {followers * 2} followers
-      </h2>
-    </div>
-  );
-}
 
 // JSX - JavaScript XML
 // Babel -> JSX -> JS
