@@ -109,7 +109,7 @@ body {
 }  
 
 /* 📱 Tablets */
- /* @media (width < 600px) {
+ @media (width < 600px) {
   .movie-box {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -117,4 +117,4 @@ body {
   .movie-img {
     height: 300px;
   }
- } */
+ }
