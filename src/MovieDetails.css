@@ -1,0 +1,124 @@
+/* App.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-color: #0f0f0f; */
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* Movie grid */
+.movie-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+  place-content: center;
+}
+
+/* Movie card */
+/* .movie-card {
+  height: 51.2rem;
+  width: 23rem;
+  padding: 3px;
+  justify-content: center;
+  place-content: center;
+  border-radius: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden; 
+  border: 2px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  
+
+
+
+
+  /* height: 45rem; */
+  /* width: 28rem; */
+  /* gap: 1rem;
+  background-color: #fff;
+  border: 2px solid black;
+  /* border-radius: 10px;
+  overflow: hidden;
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; */ */
+  /* overflow: hidden; */
+/* }  */ */
+
+.movie-card:hover { 
+   transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Poster image */
+.movie-img {
+    height: 33.3rem;
+    width: 22.2rem;
+    border-radius: 30px;
+    object-fit: cover;
+  
+}
+
+/* Content */
+.title-text {
+  padding: 15px;
+  
+}
+
+.title-text h3 {
+  font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: flex;
+    gap: 12.8rem;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+}
+
+.rating {
+  color: black;
+  font-size: 0.9rem;
+  font-size: 1rem;
+}
+
+.summary {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  color: #ccc;
+}
+
+
+/* 💻 Desktops */
+/* @media (width < 1024px) {
+  .movie-box {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .movie-img {
+    height: 340px;
+  }
+  
+  .title-text h3 {
+    font-size: 17px;
+  }
+}   */
+
+/* 📱 Tablets */
+ /* @media (width < 600px) {
+  .movie-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .movie-img {
+    height: 300px;
+  }
+ } */
