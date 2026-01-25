@@ -94,7 +94,7 @@ body {
 
 
 /* 💻 Desktops */
-/* @media (width < 1024px) {
+@media (width < 1024px) {
   .movie-box {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -106,7 +106,7 @@ body {
   .title-text h3 {
     font-size: 17px;
   }
-}   */
+}  
 
 /* 📱 Tablets */
  /* @media (width < 600px) {
