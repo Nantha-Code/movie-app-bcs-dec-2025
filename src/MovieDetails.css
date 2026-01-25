@@ -32,8 +32,7 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   overflow: hidden; 
   border: 2px solid black;
-  display: flex;
-  flex-wrap: wrap;
+
   
   /* height: 45rem; */
   /* width: 28rem; */
