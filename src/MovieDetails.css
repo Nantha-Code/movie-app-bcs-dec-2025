@@ -15,26 +15,26 @@ body {
 /* Movie grid */
 .movie-box {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 100px;
   gap: 20px;
   padding: 20px;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  /* place-content: center; */
+  place-content: center;
+  /* align-content: center; */
+  /* justify-content: center; */
+  /* align-items: center; */
 }
 
 /* Movie card */
  .movie-card { 
   height: 55em;
   width: 23rem;
-  padding: 3px;
   justify-content: center;
-  place-content: center;
   border-radius: 30px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  overflow: hidden; 
   border: 2px solid black;
+  padding: 4px;
+  /* overflow: hidden;  */
+  /* place-content: center; */
 
   
   /* height: 45rem; */
@@ -60,6 +60,7 @@ body {
     width: 22.2rem;
     border-radius: 30px;
     object-fit: cover;
+    
   
 }
 
