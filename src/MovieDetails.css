@@ -57,7 +57,7 @@ body {
 /* Poster image */
 .movie-img {
     height: 33.3rem;
-    width: 22.2rem;
+    width: 100%;
     border-radius: 15px;
     object-fit: cover;
     

@@ -9,8 +9,8 @@ import InputTags from './InputTags';
 function App() {
   return (
   <>
+  <MovieDetails/>
   <InputTags/>
-  {/* <MovieDetails/> */}
   </>
   );
 }
