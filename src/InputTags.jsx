@@ -9,7 +9,7 @@ function InputTags() {
     <div>
         <button onClick={()=> setLike(like+1)}>{like}</button>
         <button onClick={()=> setDisLike(Dislike+1)}>{Dislike}</button>
-        {/* <progress max={like+Dislike} value={like}></progress> */}
+        <progress max={like+Dislike} value={like}></progress>
     </div>
   );
 }
