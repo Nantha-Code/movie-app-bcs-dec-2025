@@ -3,13 +3,15 @@ import React from 'react'
 // import MovieDetails from './MovieDetails'
 import MovieDetails from './MovieDetails'
 import InputTags from './InputTags';
+import UserDetails from './UserDetails';
 
 
 
 function App() {
   return (
   <>
-  <MovieDetails/>
+  <UserDetails/>
+  {/* <MovieDetails/> */}
   <InputTags/>
   </>
   );

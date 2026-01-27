@@ -1,6 +1,6 @@
 // Component = UI + Logic
 // Props - Arg & Parameter - Properties
-import css from "./App.css";
+import  "./App.css";
 
 
 
