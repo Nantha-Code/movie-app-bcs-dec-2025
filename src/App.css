@@ -39,3 +39,10 @@ span {
   }
 
 }
+
+.input{
+  color: black;
+  background: whitesmoke;
+  height: 3rem;
+  width: 15rem;
+}
