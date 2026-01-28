@@ -10,9 +10,9 @@ import UserDetails from './UserDetails';
 function App() {
   return (
   <>
-  <UserDetails/>
-  {/* <MovieDetails/> */}
-  <InputTags/>
+  {/* <UserDetails/> */}
+  <MovieDetails/>
+  {/* <InputTags/> */}
   </>
   );
 }

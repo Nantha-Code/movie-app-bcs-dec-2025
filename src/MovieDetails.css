@@ -102,9 +102,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .movie-img {
-    height: 300px;
-  }
+ 
  }
 /* 💻 Desktops */
 @media (width < 1024px) {
@@ -112,11 +110,5 @@ body {
     grid-template-columns: repeat(4, 1fr);
   }
   
-  .movie-img {
-    height: 340px;
-  }
-  
-  .title-text h3 {
-    font-size: 17px;
-  }
+
 }  
