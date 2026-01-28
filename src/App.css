@@ -28,3 +28,14 @@ span {
   aspect-ratio: 1/1;
 } */
 
+
+.like-btn{
+  justify-content: space-between;
+  gap: 10px;
+
+  .like{
+    background: white;
+    color: blueviolet;
+  }
+
+}
