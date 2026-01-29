@@ -13,7 +13,7 @@ function App() {
   <>
   <ColorChanger/>
   {/* <UserDetails/> */}
-  {/* <MovieDetails/> */}
+  <MovieDetails/>
   {/* <InputTags/> */}
   </>
   );
