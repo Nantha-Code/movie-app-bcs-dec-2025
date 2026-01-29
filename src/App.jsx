@@ -4,16 +4,18 @@ import React from 'react'
 import MovieDetails from './MovieDetails'
 import InputTags from './InputTags';
 import UserDetails from './UserDetails';
-import ColorChanger from './ColorChanger';
+// import ColorChanger from './ColorChanger';
+import ColorGame from './ColorGame';
 
 
 
 function App() {
   return (
   <>
-  <ColorChanger/>
+  <ColorGame/>
+  {/* <ColorChanger/> */}
   {/* <UserDetails/> */}
-  <MovieDetails/>
+  {/* <MovieDetails/> */}
   {/* <InputTags/> */}
   </>
   );
