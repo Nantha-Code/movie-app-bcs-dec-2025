@@ -94,7 +94,7 @@ function MoviesExpress({ poster, name, rating, summary }) {
           {name} <span className="rating">⭐ {rating}</span>
         </h3>
         <div>
-          <button onClick={()=>setsetShow(false)}>Toggle summary</button>
+          <button onClick={()=>setsetShow(!show )}>Toggle summary</button>
         </div>
         {show?<p className="summary">{summary}</p> : null}
         <InputTags/>
