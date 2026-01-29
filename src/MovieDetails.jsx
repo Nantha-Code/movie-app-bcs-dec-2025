@@ -1,6 +1,5 @@
 import React from "react";
 import "./MovieDetails.css";
-import InputTags from "./InputTags";
 
 function MovieDetails() {
   const Movies = [
