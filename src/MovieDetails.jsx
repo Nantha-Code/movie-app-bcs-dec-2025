@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./MovieDetails.css";
 import InputTags from "./InputTags";
+import InputMovies from "./InputMovies";
 
 function MovieDetails() {
   const Movies = [
@@ -98,6 +99,7 @@ function MoviesExpress({ poster, name, rating, summary }) {
         </div>
         {show?<p className="summary">{summary}</p> : null}
         <InputTags/>
+        {/* <InputMovies/> */}
       </div>
     </div>
   );

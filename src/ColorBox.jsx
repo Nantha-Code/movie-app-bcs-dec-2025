@@ -1,6 +1,6 @@
-// import React from "react";
+import React from "react";
 
-// function ColorBox() {
+function ColorBox() {
 //     const styles = {
 //         height: "1.5rem",
 //         width: "10rem",
@@ -9,10 +9,10 @@
 //     };
 //     const Colors  = ["crimson", "orange", "green", "yellow"]
 
-//   return <div style={styles}>
+  return <div style={styles}>
     
-//   </div>;
+          </div>;
   
-// }
+}
 
-// export default ColorBox;
+export default ColorBox;
