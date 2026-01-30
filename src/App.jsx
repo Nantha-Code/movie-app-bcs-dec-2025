@@ -1,29 +1,29 @@
-import React from 'react'
-// import UserDetails from './UserDetails';
-// import MovieDetails from './MovieDetails'
-import MovieDetails from './MovieDetails'
-import InputTags from './InputTags';
-import UserDetails from './UserDetails';
-// import ColorChanger from './ColorChanger';
-import ColorGame from './ColorGame';
-import ColorBox from './ColorBox';
-import InputMovies from './InputMovies';
-// import { BrowserRouter, Routes, Route,} from 'react-router-dom';
-// import { NavLink } from "react-router-dom";
-
+import MovieDetails from './MovieDetails';
+import { Route, Routes, Link } from 'react-router';
 
 
 
 function App() {
   return (
   <>
-  <InputMovies/>
+  {/* <InputMovies/> */}
   {/* <ColorGame/> */}
   {/* <ColorBox/> */}
   {/* <ColorChanger/> */}
   {/* <UserDetails/> */}
-  <MovieDetails/>
+  {/* <MovieDetails/> */}
   {/* <InputTags/> */}
+
+
+
+<nav>
+  <Link to="/movies">Movies</Link>
+</nav>
+
+<Routes>
+  <Route path="movies"element={<MovieDetails/>}/>
+</Routes>
+
   </>
   );
 }

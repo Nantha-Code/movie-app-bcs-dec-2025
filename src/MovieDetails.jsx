@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./MovieDetails.css";
 import InputTags from "./InputTags";
-import InputMovies from "./InputMovies";
+// import InputMovies from "./InputMovies";
 
 function MovieDetails() {
   const Movies = [

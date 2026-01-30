@@ -1,12 +1,12 @@
-import React from 'react'
+// import React from 'react'
 
-function InputMovies() {
-  return (
-    <div>InputMovies</div>
-  )
-}
+// function InputMovies() {
+//   return (
+//     <div>InputMovies</div>
+//   )
+// }
 
-export default InputMovies
+// export default InputMovies
 
 
 
@@ -21,7 +21,7 @@ export default InputMovies
 
 
 // import { useState } from "react";
-// import { MovieDetails } from "./Movie";
+// // import { MovieDetails } from "./Movie";
 // import { INITIAL_MOVIES } from "./movies-data";
 
 // // Smart
@@ -80,9 +80,12 @@ export default InputMovies
 //       <section className="movie-list-container">
 //         {/* Todo: Add movie form - 4 x inputs */}
 
-//         {/* Copy movies + new movie */}
-//         {movies.map((mv) => (
-//           < movie={mv} />
+//         {/* Copy movies + new movie
+//         {MoviesExpress.map((mv) => (
+//          < Movies ={mv} />
+//         ))} */}
+//         {MoviesExpress.map((mv) => (
+//           <Movie movie={mv} />
 //         ))}
 //       </section>
 //     </div>
