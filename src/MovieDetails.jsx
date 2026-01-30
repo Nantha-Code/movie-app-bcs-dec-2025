@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./MovieDetails.css";
 import InputTags from "./InputTags";
-// import InputMovies from "./InputMovies";
+import InputMovies from "./InputMovies";
 
 function MovieDetails() {
   const Movies = [
@@ -83,11 +83,35 @@ function MovieDetails() {
   );
 }
 
+
 function MoviesExpress({ poster, name, rating, summary }) {
+  const [show, setShow] = useState(true);
+
+  return (
+    <div className="movie-card">
+      <img src={poster} alt={name} className="movie-img" />
+
+      <div className="title-text">
+        <h3>
+          {name} <span className="rating">⭐ {rating}</span>
+        </h3>
+
+        <button onClick={() => setShow(!show)}>Toggle summary</button>
+
+        {show && <p className="summary">{summary}</p>}
+        
+      </div>
+    </div>
+  );
+}
+
+
+function MoviesExpres({ poster, name, rating, summary }) {
   const[show ,setsetShow] = useState(true);
 
   return (
     <div className="movie-card">
+      {/* <InputMovies/> */}
       <img src={poster} alt={name} className="movie-img" />
 
       <div className="title-text">
@@ -98,9 +122,8 @@ function MoviesExpress({ poster, name, rating, summary }) {
           <button onClick={()=>setsetShow(!show )}>Toggle summary</button>
         </div>
         {show?<p className="summary">{summary}</p> : null}
-        <InputTags/>
-        {/* <InputMovies/> */}
       </div>
+        <InputTags/>
     </div>
   );
 }
