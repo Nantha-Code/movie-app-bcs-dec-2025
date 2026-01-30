@@ -1,3 +1,25 @@
+import React from 'react'
+
+function InputMovies() {
+  return (
+    <div>InputMovies</div>
+  )
+}
+
+export default InputMovies
+
+
+
+
+
+
+
+
+
+
+
+
+
 // import { useState } from "react";
 // import { MovieDetails } from "./Movie";
 // import { INITIAL_MOVIES } from "./movies-data";
@@ -66,21 +88,6 @@
 //     </div>
 //   );
 // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
