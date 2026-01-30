@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./MovieDetails.css";
 import InputTags from "./InputTags";
-import InputMovies from "./InputMovies";
+import MovieList from "./MovieList";
 
 function MovieDetails() {
   const Movies = [
@@ -99,7 +99,7 @@ function MoviesExpress({ poster, name, rating, summary }) {
         <button onClick={() => setShow(!show)}>Toggle summary</button>
 
         {show && <p className="summary">{summary}</p>}
-        
+        <InputTags/>
       </div>
     </div>
   );
@@ -111,7 +111,7 @@ function MoviesExpres({ poster, name, rating, summary }) {
 
   return (
     <div className="movie-card">
-      {/* <InputMovies/> */}
+      <MovieList/>
       <img src={poster} alt={name} className="movie-img" />
 
       <div className="title-text">
