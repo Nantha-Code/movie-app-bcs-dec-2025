@@ -1,18 +1,19 @@
-import React from "react";
+// import React from "react";
 
-function ColorBox() {
-//     const styles = {
-//         height: "1.5rem",
-//         width: "10rem",
-//         // marginTop: "1rem",
-//         backgroundColor: "pink",
-//     };
-//     const Colors  = ["crimson", "orange", "green", "yellow"]
+// function ColorBox() {
+// //     const styles = {
+// //         height: "1.5rem",
+// //         width: "10rem",
+// //         // marginTop: "1rem",
+// //         backgroundColor: "pink",
+// //     };
+// //     const Colors  = ["crimson", "orange", "green", "yellow"]
 
-  return <div style={styles}>
-    
-          </div>;
+//   return (
+
+//   );
+
   
-}
+// }
 
-export default ColorBox;
+// export default ColorBox;
