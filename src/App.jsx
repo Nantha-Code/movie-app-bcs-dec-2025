@@ -1,5 +1,5 @@
 import ColorGame from './ColorGame';
-// import MovieDetails from './MovieDetails';
+import MovieDetails from './MovieDetails';
 // import MovieList from './InputMovies';
 import UserDetails from './UserDetails';
 import { Route, Routes, Link } from 'react-router'
@@ -22,7 +22,7 @@ function App() {
 
  <nav>
 <ul>
-  {/* <li> <Link to="/movies">Movies</Link></li> */}
+  <li> <Link to="/movies">Movies</Link></li>
   <li><Link to="/colorgame">Color Game</Link></li>
   <li><Link to="/user">User</Link></li>
   {/* <li><Link to="/list">List</Link></li> */}
@@ -30,7 +30,7 @@ function App() {
 </nav>
 
 <Routes>
-  {/* <Route path="movies"element={<MovieDetails/>}/> */}
+  <Route path="movies"element={<MovieDetails/>}/>
   <Route path="colorgame"element={<ColorGame/>}/>
   <Route path="user"element={<UserDetails/>}/>
   {/* <Route path="list"element={<MovieList/>}/> */}
