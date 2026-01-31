@@ -88,12 +88,15 @@ function MoviesExpress({ poster, name, rating, summary }) {
       <img src={poster} alt={name} className="movie-img" />
 
       <div className="title-text">
-        <h3>
+          <h3>
           {name} <span className="rating">⭐ {rating}</span>
         </h3>
         <p className="summary">{summary}</p>
-  <InputTags/>
       </div>
+
+        <div className="like-dislke">
+      <InputTags/>
+        </div>
     </div>
   );
 }
