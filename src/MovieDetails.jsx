@@ -1,7 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import "./MovieDetails.css";
-import InputTags from "./InputTags";
-import MovieList from "./MovieList";
 
 function MovieDetails() {
   const Movies = [
@@ -67,7 +65,7 @@ function MovieDetails() {
     }
     
 ];
- 
+
   return (
     <section className="movie-box">
       {Movies.map(({ poster, name, rating, summary }) => (
@@ -83,10 +81,7 @@ function MovieDetails() {
   );
 }
 
-
 function MoviesExpress({ poster, name, rating, summary }) {
-  const [show, setShow] = useState(true);
-
   return (
     <div className="movie-card">
       <img src={poster} alt={name} className="movie-img" />
@@ -95,35 +90,9 @@ function MoviesExpress({ poster, name, rating, summary }) {
         <h3>
           {name} <span className="rating">⭐ {rating}</span>
         </h3>
-
-        <button onClick={() => setShow(!show)}>Toggle summary</button>
-
-        {show && <p className="summary">{summary}</p>}
+        <p className="summary">{summary}</p>
         <InputTags/>
       </div>
-    </div>
-  );
-}
-
-
-function MoviesExpres({ poster, name, rating, summary }) {
-  const[show ,setsetShow] = useState(true);
-
-  return (
-    <div className="movie-card">
-      <MovieList/>
-      <img src={poster} alt={name} className="movie-img" />
-
-      <div className="title-text">
-        <h3>
-          {name} <span className="rating">⭐ {rating}</span>
-        </h3>
-        <div>
-          <button onClick={()=>setsetShow(!show )}>Toggle summary</button>
-        </div>
-        {show?<p className="summary">{summary}</p> : null}
-      </div>
-        <InputTags/>
     </div>
   );
 }

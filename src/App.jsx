@@ -1,6 +1,6 @@
 import ColorGame from './ColorGame';
-import MovieDetails from './MovieDetails';
-import MovieList from './MovieList';
+// import MovieDetails from './MovieDetails';
+// import MovieList from './InputMovies';
 import UserDetails from './UserDetails';
 import { Route, Routes, Link } from 'react-router'
 
@@ -15,12 +15,12 @@ function App() {
   {/* <ColorBox/> */}
   {/* <ColorChanger/> */}
   {/* <UserDetails/> */}
-  {/* <MovieDetails/> */}
+  <MovieDetails/>
   {/* <InputTags/> */}
 
 
 
-<nav>
+{/* <nav>
 <ul>
   <li> <Link to="/movies">Movies</Link></li>
   <li><Link to="/colorgame">Color Game</Link></li>
@@ -35,7 +35,7 @@ function App() {
   <Route path="user"element={<UserDetails/>}/>
   <Route path="list"element={<MovieList/>}/>
 
-</Routes>
+</Routes> */}
 
   </>
   );
