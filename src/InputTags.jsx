@@ -11,9 +11,9 @@ function InputTags() {
         <button className='like' onClick={()=> setLike(like+1)}>{like}👍</button>
         <button className='dislike' onClick={()=> setDisLike(Dislike+1)}>{Dislike}👎</button>
          <div>
-          { }  
-          {/* {{like >= disLike + 10 && <h2>You are awesome 🎊🎊</h2>}}
-        <progress max={like+Dislike} value={like}></progress> */}
+          
+           {/* {{like >= disLike + 10 && <h2>You are awesome 🎊🎊</h2>}} */}
+        {/* <progress max={like+Dislike} value={like}></progress>  */}
          </div>
          
     </div>

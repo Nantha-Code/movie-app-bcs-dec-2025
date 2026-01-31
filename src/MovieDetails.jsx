@@ -1,5 +1,6 @@
 import React from "react";
 import "./MovieDetails.css";
+import InputTags from "./InputTags";
 
 function MovieDetails() {
   const Movies = [
@@ -79,8 +80,8 @@ function MovieDetails() {
       ))}
     </section>
   );
-
-
+  
+  
 function MoviesExpress({ poster, name, rating, summary }) {
   return (
     <div className="movie-card">
@@ -91,7 +92,7 @@ function MoviesExpress({ poster, name, rating, summary }) {
           {name} <span className="rating">⭐ {rating}</span>
         </h3>
         <p className="summary">{summary}</p>
-        
+  <InputTags/>
       </div>
     </div>
   );
