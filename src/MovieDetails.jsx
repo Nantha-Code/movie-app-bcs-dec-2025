@@ -91,7 +91,7 @@ function MoviesExpress({ poster, name, rating, summary }) {
           {name} <span className="rating">⭐ {rating}</span>
         </h3>
         <p className="summary">{summary}</p>
-        <InputTags/>
+        
       </div>
     </div>
   );
