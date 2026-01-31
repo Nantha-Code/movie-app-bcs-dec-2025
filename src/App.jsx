@@ -15,27 +15,27 @@ function App() {
   {/* <ColorBox/> */}
   {/* <ColorChanger/> */}
   {/* <UserDetails/> */}
-  <MovieDetails/>
+  {/* <MovieDetails/> */}
   {/* <InputTags/> */}
 
 
 
-{/* <nav>
+ <nav>
 <ul>
-  <li> <Link to="/movies">Movies</Link></li>
-  <li><Link to="/colorgame">Color Game</Link></li>
+  {/* <li> <Link to="/movies">Movies</Link></li> */}
+  {/* <li><Link to="/colorgame">Color Game</Link></li> */}
   <li><Link to="/user">User</Link></li>
-  <li><Link to="/list">List</Link></li>
+  {/* <li><Link to="/list">List</Link></li> */}
 </ul>
 </nav>
 
 <Routes>
-  <Route path="movies"element={<MovieDetails/>}/>
-  <Route path="colorgame"element={<ColorGame/>}/>
+  {/* <Route path="movies"element={<MovieDetails/>}/> */}
+  {/* <Route path="colorgame"element={<ColorGame/>}/> */}
   <Route path="user"element={<UserDetails/>}/>
-  <Route path="list"element={<MovieList/>}/>
+  {/* <Route path="list"element={<MovieList/>}/> */}
 
-</Routes> */}
+</Routes> 
 
   </>
   );

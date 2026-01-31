@@ -6,11 +6,11 @@ import { BrowserRouter } from "react-router";
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    {/* <BrowserRouter> */}
+    <BrowserRouter>
     
-    
-    {/* </BrowserRouter> */}
- 
     <App />
+    
+    </BrowserRouter>
+ 
   </StrictMode>
 )

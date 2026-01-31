@@ -79,7 +79,7 @@ function MovieDetails() {
       ))}
     </section>
   );
-}
+
 
 function MoviesExpress({ poster, name, rating, summary }) {
   return (
@@ -96,6 +96,6 @@ function MoviesExpress({ poster, name, rating, summary }) {
     </div>
   );
 }
-
+}
 export default MovieDetails;
 
