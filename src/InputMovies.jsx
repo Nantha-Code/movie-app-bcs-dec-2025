@@ -1,10 +1,6 @@
-import React from 'react'
-import { useState } from 'react';
-import InputTags from './InputTags';
-import { INITIAL_MOVIES } from "./movies-data";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
-import MovieDetails from './MovieDetails';
+import { useState } from 'react';
 
 function InputMovies({ movies, setMovies }) {
   const [name, setName] = useState("");
@@ -17,7 +13,7 @@ function InputMovies({ movies, setMovies }) {
     rating: rating,
     summary: summary,
   };
-  console.log(newMovie);
+  // console.log(newMovie);
   return (
 <div>
 
@@ -55,14 +51,14 @@ function InputMovies({ movies, setMovies }) {
           Add Movie
         </Button>
     </div>
-    <section className="movie-list-container">
+    {/* <section className="movie-list-container"> */}
         {/* Todo: Add movie form - 4 x inputs */}
 
         {/* Copy movies + new movie */}
-        {movies.map((mv) => (
+        {/* {movies.map((mv) => (
           <Movie movie={mv} />
         ))}
-      </section>
+      </section> */}
 </div>
   )
 }

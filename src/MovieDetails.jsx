@@ -71,23 +71,25 @@ function MovieDetails() {
 ];
 
   return (
+    <div>
+      <InputMovies/>  
     <section className="movie-box">
-      {/* <InputMovies/>   */}
       {Movies.map(({ poster, name, rating, summary }) => (
         <MoviesExpress
-          key={name}
-          poster={poster}
-          name={name}
-          rating={rating}
-          summary={summary}
+        key={name}
+        poster={poster}
+        name={name}
+        rating={rating}
+        summary={summary}
         />
       ))}
     </section>
+      </div>
   );
   
   
-function MoviesExpress({ poster, name, rating, summary }) {
-  const [show, setShow] = useState(true);
+  function MoviesExpress({ poster, name, rating, summary }) {
+  const [show, setShow] = useState(true); 
   return (
     <div className="movie-card">
       <img src={poster} alt={name} className="movie-img" />
@@ -106,8 +108,8 @@ function MoviesExpress({ poster, name, rating, summary }) {
         </div>
         <div className="like-dislike">
         </div>
-        <InputTags/>
         {/* <InputMovies/> */}
+        <InputTags/>
     </div>
     );
   }

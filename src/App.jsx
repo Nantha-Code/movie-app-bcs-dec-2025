@@ -1,9 +1,9 @@
 import ColorGame from './ColorGame';
 import MovieDetails from './MovieDetails';
-// import MovieList from './InputMovies';
+import MovieList from './InputMovies';
 import UserDetails from './UserDetails';
+import NotFound from './NotFound';
 import { Route, Routes, Link } from 'react-router'
-
 
 
 
@@ -33,7 +33,10 @@ function App() {
   <Route path="movies"element={<MovieDetails/>}/>
   <Route path="colorgame"element={<ColorGame/>}/>
   <Route path="user"element={<UserDetails/>}/>
-  {/* <Route path="list"element={<MovieList/>}/> */}
+  <Route path="list"element={<MovieList/>}/>
+
+  {/*    * -> catch all -> Always last      */}
+  <Route path="*" element={<NotFound />} />
 
 </Routes> 
 
