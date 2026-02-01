@@ -89,21 +89,25 @@ function MoviesExpress({ poster, name, rating, summary }) {
   return (
     <div className="movie-card">
       <img src={poster} alt={name} className="movie-img" />
-
       <div className="title-text">
           <h3>
           {name} <span className="rating">⭐ {rating}</span>
-        </h3>
+          </h3>
       </div>
+      <div className="action-buttons">
       {/* Reacting User  - update show*/}
-      <button onClick={() => setShow(!show)} className="toggle">Toggle</button>
-        {show ? <p className="summary">{summary}</p> : null}
-        <div className="like-dislke">
+        <button onClick={() => setShow(!show)} className="toggle">Toggle</button>
+        <button>Delete</button>
         </div>
-      <InputTags/>
+        <div className="para">
+        {show ? <p className="summary">{summary}</p> : null}
+        </div>
+        <div className="like-dislike">
+        </div>
+        <InputTags/>
     </div>
-  );
-}
+    );
+  }
 }
 export default MovieDetails;
 
