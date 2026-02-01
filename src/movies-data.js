@@ -1,5 +1,5 @@
 // CONSTANT_CASE / SCREAMING_SNAKE_CASE
-export const INITIAL_MOVIES = [
+export const INITIAL_MOVIES = ( [
   {
     name: "Border 2",
     poster:
@@ -80,4 +80,4 @@ export const INITIAL_MOVIES = [
     summary:
       "An intense sports drama that dives into the high-stakes world of horse racing. The film explores the physical and emotional challenges faced by a professional jockey fighting for pride and survival in the sport.",
   },
-];
+] );
