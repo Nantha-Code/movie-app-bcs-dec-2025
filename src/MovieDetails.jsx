@@ -1,8 +1,10 @@
 import React from "react";
 import "./MovieDetails.css";
 import InputTags from "./InputTags";
+import { useState } from "react";
 
 function MovieDetails() {
+//  const [show, setShow] = useState(true);
   const Movies = [
     {
       "name": "Border 2",
@@ -83,6 +85,7 @@ function MovieDetails() {
   
   
 function MoviesExpress({ poster, name, rating, summary }) {
+  const [show, setShow] = useState(true);
   return (
     <div className="movie-card">
       <img src={poster} alt={name} className="movie-img" />
@@ -91,12 +94,13 @@ function MoviesExpress({ poster, name, rating, summary }) {
           <h3>
           {name} <span className="rating">⭐ {rating}</span>
         </h3>
-        <p className="summary">{summary}</p>
       </div>
-
+      {/* Reacting User  - update show*/}
+      <button onClick={() => setShow(!show)} className="toggle">Toggle</button>
+        {show ? <p className="summary">{summary}</p> : null}
         <div className="like-dislke">
-      <InputTags/>
         </div>
+      <InputTags/>
     </div>
   );
 }
