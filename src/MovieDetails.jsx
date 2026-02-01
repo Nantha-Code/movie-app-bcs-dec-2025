@@ -72,7 +72,7 @@ function MovieDetails() {
 
   return (
     <div>
-      <InputMovies/>  
+      {/* <InputMovies/>   */}
     <section className="movie-box">
       {Movies.map(({ poster, name, rating, summary }) => (
         <MoviesExpress

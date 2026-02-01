@@ -51,14 +51,22 @@ function InputMovies({ movies, setMovies }) {
           Add Movie
         </Button>
     </div>
-    {/* <section className="movie-list-container"> */}
+      <section className="movie-list-container">
+  {movies.map((mv, index) => (
+    <Movie key={index} movie={mv} />
+  ))}
+</section>
+
+
+
+    {/* <section className="movie-list-container">
         {/* Todo: Add movie form - 4 x inputs */}
 
         {/* Copy movies + new movie */}
-        {/* {movies.map((mv) => (
-          <Movie movie={mv} />
-        ))}
-      </section> */}
+        {/* {movies.map((mv) => ( */}
+          {/* <Movie movie={mv} /> */}
+        {/* ))} */}
+      {/* </section> */}  
 </div>
   )
 }
