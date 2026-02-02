@@ -1,13 +1,14 @@
+import { Link, Route, Routes } from 'react-router';
 import ColorGame from './ColorGame';
-import MovieDetails from './MovieDetails';
 import MovieList from './InputMovies';
-import UserDetails from './UserDetails';
+import MovieDetails from './MovieDetails';
 import NotFound from './NotFound';
-import { Route, Routes, Link } from 'react-router'
+import UserDetails from './UserDetails';
 
 
 
 function App() {
+   
   return (
   <>
   {/* <InputMovies/> */}
@@ -42,6 +43,8 @@ function App() {
 
   </>
   );
+
+
 }
 
 export default App;
