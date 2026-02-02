@@ -45,8 +45,7 @@ span {
 .like-btn{
   justify-content: space-between;
   display: flex;
-    /* height: 2px; */
-   /* width: 2px;  */
+    
    
   margin-top: 1rem;
   gap: 2px;
