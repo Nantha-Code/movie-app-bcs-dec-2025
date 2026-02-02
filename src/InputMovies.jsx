@@ -1,71 +1,71 @@
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
-import { useState } from 'react';
+import { useState } from "react";
+import MovieCard from "./MovieCard";
 
-function InputMovies({ movies, setMovies }) {
+function InputMovies() {
+  const [movies, setMovies] = useState([]); 
   const [name, setName] = useState("");
-   const [poster, setPoster] = useState("");
+  const [poster, setPoster] = useState("");
   const [rating, setRating] = useState("");
   const [summary, setSummary] = useState("");
-  const newMovie = {
-    name: name,
-    poster: poster,
-    rating: rating,
-    summary: summary,
-  };
-  // console.log(newMovie);
-  return (
-<div>
 
-    <div className="input-box">
-      <TextField
-        label="Name"
-        variant="outlined"
-        value={name}
-        onChange={(event) => setName(event.target.value)}
+  const newMovie = {
+    name,
+    poster,
+    rating,
+    summary,
+  };
+
+  return (
+    <div>
+      <div className="input-box">
+        <TextField
+          label="Name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
         />
+
         <TextField
           label="Poster"
           value={poster}
-          onChange={(event) => setPoster(event.target.value)}
+          onChange={(e) => setPoster(e.target.value)}
         />
+
         <TextField
           label="Rating"
           value={rating}
-          onChange={(event) => setRating(event.target.value)}
+          onChange={(e) => setRating(e.target.value)}
         />
+
         <TextField
           label="Summary"
           value={summary}
-          onChange={(event) => setSummary(event.target.value)}
+          onChange={(e) => setSummary(e.target.value)}
         />
-        {/* Copy movies + new movie */}
 
         <Button
           variant="contained"
-          onClick={() => setMovies([newMovie, ...movies])}
-          >
+          onClick={() => {
+            setMovies([newMovie, ...movies]);
+            setName("");
+            setPoster("");
+            setRating("");
+            setSummary("");
+          }}
+        >
           Add Movie
         </Button>
+      </div>
+
+      {/* MOVIE LIST */}
+      <section className="movie-box">
+        {movies.map((mv, index) => (
+          <MovieCard key={index} {...mv} />
+        ))}
+      </section>
     </div>
-      {/* <section className="movie-list-container">  
-  {movies.map((mv, index) => (
-    <Movie key={index} movie={mv} />
-  ))}
-</section> */}
-
-
-
-    {/* <section className="movie-list-container">
-        {/* Todo: Add movie form - 4 x inputs */}
-
-        {/* Copy movies + new movie */}
-        {/* {movies.map((mv) => ( */}
-          {/* <Movie movie={mv} /> */}
-        {/* ))} */}
-      {/* </section> */}  
-</div>
-  )
+  );
 }
 
 export default InputMovies;
