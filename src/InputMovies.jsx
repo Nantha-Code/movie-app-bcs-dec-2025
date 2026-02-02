@@ -17,45 +17,42 @@ function InputMovies({ movies, setMovies }) {
   return (
 <div>
 
-    <div>
+    <div className="input-box">
       <TextField
         label="Name"
         variant="outlined"
         value={name}
         onChange={(event) => setName(event.target.value)}
         />
-        <input
+        <TextField
+          label="Poster"
           value={poster}
           onChange={(event) => setPoster(event.target.value)}
-          type="text"
-          placeholder="Poster"
         />
-        <input
+        <TextField
+          label="Rating"
           value={rating}
           onChange={(event) => setRating(event.target.value)}
-          type="text"
-          placeholder="Rating"
         />
-        <input
+        <TextField
+          label="Summary"
           value={summary}
           onChange={(event) => setSummary(event.target.value)}
-          type="text"
-          placeholder="Summary"
         />
         {/* Copy movies + new movie */}
 
         <Button
           variant="contained"
           onClick={() => setMovies([newMovie, ...movies])}
-        >
+          >
           Add Movie
         </Button>
     </div>
-      <section className="movie-list-container">
+      {/* <section className="movie-list-container">  
   {movies.map((mv, index) => (
     <Movie key={index} movie={mv} />
   ))}
-</section>
+</section> */}
 
 
 

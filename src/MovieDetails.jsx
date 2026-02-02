@@ -1,8 +1,8 @@
-import React from "react";
-import "./MovieDetails.css";
-import InputTags from "./InputTags";
 import { useState } from "react";
+import InputTags from "./InputTags";
 import InputMovies from "./InputMovies";
+import "./MovieDetails.css";
+import "./App.css"
 
 function MovieDetails() {
 //  const [show, setShow] = useState(true);
@@ -72,7 +72,7 @@ function MovieDetails() {
 
   return (
     <div>
-      {/* <InputMovies/>   */}
+      <InputMovies/>  
     <section className="movie-box">
       {Movies.map(({ poster, name, rating, summary }) => (
         <MoviesExpress
@@ -90,6 +90,7 @@ function MovieDetails() {
   
   function MoviesExpress({ poster, name, rating, summary }) {
   const [show, setShow] = useState(true); 
+  
   return (
     <div className="movie-card">
       <img src={poster} alt={name} className="movie-img" />
@@ -108,7 +109,6 @@ function MovieDetails() {
         </div>
         <div className="like-dislike">
         </div>
-        {/* <InputMovies/> */}
         <InputTags/>
     </div>
     );

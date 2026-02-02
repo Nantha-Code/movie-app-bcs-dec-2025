@@ -50,8 +50,7 @@ export const INITIAL_MOVIES =  [
   },
   {
     name: "Rahu Ketu",
-    poster:
-      "https://assets-in.bmscdn.com/discovery-catalog/events/et00462933-qmcbleflrx-portrait.jpg",
+    poster:"https://assets-in.bmscdn.com/discovery-catalog/events/et00462933-qmcbleflrx-portrait.jpg",
     rating: 8.0,
     summary:
       "A fantasy comedy where two unlucky characters from a writer's story, Rahu and Ketu (played by Varun Sharma and Pulkit Samrat), magically come to life and create cosmic chaos in the real world.",
