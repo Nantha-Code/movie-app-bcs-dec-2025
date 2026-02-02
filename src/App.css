@@ -6,28 +6,26 @@
   gap: 2rem;
   align-content: center;
   justify-content: center;
+  margin-top: 2rem;
+
 }
 
-/* .user-msg {
-  color: orange;
-} */
 .profile-pic {
-  border-radius: 90rem;
+  border-radius: 50%;
   height: 15rem;
+  justify-content: center;
+  align-content: center;
 }
-.p-name {
-  font-style: italic;
+.text{
+  color: black;
+  justify-items: center;
+  align-items: center;
 }
 span {
   font-weight: bold;
   font-style: italic;
 }
  
-/* .img{
-  height: 20rem;
-  aspect-ratio: 1/1;
-} */
-
 .action-buttons{
   display: flex;
   justify-content: space-between;

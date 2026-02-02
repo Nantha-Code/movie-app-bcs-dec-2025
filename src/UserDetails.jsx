@@ -31,9 +31,9 @@ function UserDetails() {
 
 function User({ name, url }) {
   return (
-    <div>
-      <img src={url} alt={name} />
-      <h3>Hello, {name}</h3>
+    <div className="App">
+      <img src={url} alt={name} className="profile-pic"/>
+      <h3 className="text">Hello,<span>{name}🎉</span></h3>
     </div>
   );
 }
