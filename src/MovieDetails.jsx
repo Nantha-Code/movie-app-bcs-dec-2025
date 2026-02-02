@@ -3,6 +3,7 @@ import InputTags from "./InputTags";
 import InputMovies from "./InputMovies";
 import "./MovieDetails.css";
 import "./App.css"
+import Delete from "./Delete";
 
 function MovieDetails() {
 //  const [show, setShow] = useState(true);
