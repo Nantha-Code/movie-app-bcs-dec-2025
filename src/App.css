@@ -84,3 +84,13 @@ span {
 .label{
   gap: 3rem;
 }
+
+Nav{
+  justify-items: center;
+  /* align-items: center; */
+  ul{
+    a{
+      justify-items: center;
+    }
+  }
+}
