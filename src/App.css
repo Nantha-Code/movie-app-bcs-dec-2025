@@ -87,8 +87,12 @@ span {
 
 Nav{
   justify-items: center;
-  /* align-items: center; */
+  align-items: center;
+  
   ul{
+    display: flex;
+    gap:2rem;
+    align-items: center;
     a{
       justify-items: center;
     }
