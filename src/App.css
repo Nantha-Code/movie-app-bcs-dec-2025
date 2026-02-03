@@ -34,19 +34,13 @@ span {
   .toggle{
     font-size: 1rem;
     font-weight: bold;
-    
-    /* color: black; */
-    
-
   }
 
 }
 
 .like-btn{
   justify-content: space-between;
-  display: flex;
-    
-   
+  display: flex; 
   margin-top: 1rem;
   gap: 2px;
 
