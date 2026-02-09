@@ -98,3 +98,9 @@ Nav{
     }
   }
 }
+.input-tag{
+  display: flex;
+  .input-box{
+  display: flex;
+  }
+}

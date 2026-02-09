@@ -2,6 +2,9 @@ import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import { useState } from "react";
 import MovieCard from "./MovieCard";
+import "./App.css"
+
+
 
 function InputMovies() {
   const [movies, setMovies] = useState([]); 
@@ -18,7 +21,7 @@ function InputMovies() {
   };
 
   return (
-    <div>
+    <div className="input-tag">
       <div className="input-box">
         <TextField
           label="Name"

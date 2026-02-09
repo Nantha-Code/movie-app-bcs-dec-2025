@@ -4,6 +4,10 @@ import InputMovies from "./InputMovies";
 import "./MovieDetails.css";
 import "./App.css"
 import Delete from "./Delete";
+import IconButton from "@mui/material/IconButton";
+import ExpandLessIcon from "@mui/icons-material/ExpandLess";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+
 
 function MovieDetails() {
 //  const [show, setShow] = useState(true);
@@ -102,7 +106,10 @@ function MovieDetails() {
       </div>
       <div className="action-buttons">
       {/* Reacting User  - update show*/}
-        <button onClick={() => setShow(!show)} className="toggle">Toggle</button>
+        <IconButton
+         onClick={() => setShow(!show)} className="toggle">
+         {show ? <ExpandLessIcon /> : <ExpandMoreIcon />}
+         </IconButton>
         <button>Delete</button>
         </div>
         <div className="para">
